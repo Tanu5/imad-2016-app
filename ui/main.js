@@ -9,7 +9,7 @@ var marginleft=0;
 function moveRight()
 {
     marginleft=marginlef + 2;
-    img.style.marginleft=marginleft + px;
+    img.style.marginleft=marginleft + 'px';
 }
 img.onclick=function()
 {
