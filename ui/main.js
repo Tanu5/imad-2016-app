@@ -5,7 +5,7 @@ element.innerHTML='modified text';
 
 //move the image
 var img=document.getElementById('madi');
-img.onclick=function()
-{
-    img.style.marginleft='100px';
+img.onclick=function(){
+    
+    img.style.marginleft= '100px';
 };
