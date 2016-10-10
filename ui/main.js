@@ -4,7 +4,7 @@ var element=document.getElementById('main-text');
 element.innerHTML='modified text';
 //move the image
 
-var img=document.getEelementById('madi');
+var img=document.getElementById('madi');
 var marginleft=0;
 function moveRight()
 {
