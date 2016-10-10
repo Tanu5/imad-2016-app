@@ -1,3 +1,4 @@
 console.log('Loaded!');
-var element=document.getelementbyid('main-text');
+//change the text of the main-text div
+var element=document.getElementById('main-text');
 element.innerHTML='modified text';
