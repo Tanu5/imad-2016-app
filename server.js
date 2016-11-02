@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var article={
+var articles={
     'article-one':{
         title:'Article One'| Tanusha,
         heading: Articleone,
@@ -72,6 +72,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html')); 
 });
 app.get('/:articleName',function (req,res){
+    //articleName == article-one
+    //articles[articleName]== {} content object for article-one
     var articleName=req.params.articleName;
    res.sendFile(createTemplate(articles[articleName])); 
 });
