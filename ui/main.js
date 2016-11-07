@@ -20,7 +20,7 @@ button.onclick = function(){
     
     
     //make the request
-    request.open('GET', 'http://tanu5.imad.hasura-app.io/counter', true);
-    request.send(null);
+    request. open('GET', 'http://tanu5.imad.hasura-app.io/counter', true);
+    request. send(null);
 };
    
