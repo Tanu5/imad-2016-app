@@ -25,8 +25,9 @@ button.onclick = function(){
 };
    
 //Submitname
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+//move 2 lines 
+//var nameInput = document.getElementById('name');
+//var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
      //create a request object
@@ -50,7 +51,10 @@ submit.onclick = function() {
         }
         //not done yet
     };
-    
+    //moved lines
+    var nameInput = document.getElementById('name');
+      var name = nameInput.value;
+      nameInput.value = '';
     
     //make the request
     request. open('GET', 'http://tanu5.imad.hasura-app.io/submit-name?name='  +  name, true);
