@@ -64,6 +64,6 @@ nameInput.value = '';
 
 	//Make the request
 //	request. open('GET', '/submit-name?name='  +  name, true); // YOUR LINE; If you give '?' then in server side you've to read params, "/:" in server side different
-	request. open('GET', '/submit-name/name='  +  name, true);
+	request. open('GET', '/submit-name/name'  +  name, true);
 	request. send(null);
 };
