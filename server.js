@@ -8,7 +8,7 @@ var path = require('path');
       //  host : 'db-imad.hasura-app.io',
         //port : '5432',
         //password : process.env.DB_PASSWORD
-};
+//};
 var app = express();
 app.use(morgan('combined'));
 
@@ -85,7 +85,7 @@ app.use(morgan('combined'));
   res.sendFile(path.join(__dirname, 'ui', 'index.html')); 
   });
   //var pool = new pool(config);
-  //app.get('/test-db',function(req,res){
+  app.get('/test-db',function(req,res){
       //make a select request
       //return a response with results
     //  pool.query('SELECT *FROM test',function(err,result){
@@ -95,7 +95,7 @@ app.use(morgan('combined'));
             //    res.send(JSON.stringify(result));
             //}
       //});
-  //});
+  });
 // app.get('/articleName', function(req,res)
    //     {
             //articleName == article-one
